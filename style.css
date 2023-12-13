@@ -125,6 +125,7 @@ body {
 .shopping-cart .cart-items {
   width: 95%;
   height: 100px;
+  background-color: var(--bg);
   border: 1px solid var(--primary);
   margin-top: 1rem;
   margin-left: 0.5rem;
@@ -139,8 +140,26 @@ body {
 }
 
 .shopping-cart .cart-items .item-detail {
-  text-align: left;
-  color: #010101;
+  color: #fff;
+}
+.shopping-cart .cart-items .item-detail h4,.item-price {
+  margin-left: 0.5rem;
+ 
+}
+
+.shopping-cart .cart-items .item-detail .item-price{
+ text-decoration: line-through red;
+}
+
+.shopping-cart .cart-items .trash{
+ margin-left: 50%;
+ margin-top: 2rem;
+ width: 1.5rem;
+ height: 1.5rem;
+}
+
+.shopping-cart .cart-items .trash:hover {
+ color: var(--primary);
 }
 /*navbar-end*/
 

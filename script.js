@@ -33,3 +33,9 @@ cartButton.addEventListener('click', function(e) {
  shoppingCart.classList.toggle("actives");
  e.preventDefault()
 }) 
+
+document.addEventListener('click', function(e) {
+  if(!cartButton.contains(e.target) && !shoppingCart.contains(e.target) ){
+    shoppingCart.classList.remove('actives');
+  }
+})
